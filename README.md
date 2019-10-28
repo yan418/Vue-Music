@@ -1,9 +1,9 @@
-<<<<<<< HEAD
-# music
+## 使用Vue 搭建的移动端案例
+[music] 一个移动端的手机播放器
 
-> A Vue.js project
 
-## Build Setup
+## 安装 Vue
+cnpm install -g vue-cli
 
 ``` bash
 # install dependencies
