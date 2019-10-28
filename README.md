@@ -2,25 +2,65 @@
 [music] 一个移动端的手机播放器
 
 
-## 安装 Vue
+## 搭建项目
+``` bash
+# 先安装 node
+# 升级 npm
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+# 全局安装vue
+cnpm install vue
+
+# 全局安装vue-cli
 cnpm install -g vue-cli
 
-``` bash
-# install dependencies
-npm install
+# 创建项目
+vue init webpack music
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+# 配置完，启动项目
+cnpm run dev
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-# vue-music
-Vue的小案例，模拟手机播放器
->>>>>>> 04155fafef1962ea2732be5ffb4c1cafb73c580f
+## 安装插件
+
+``` bash
+# axios 的安装
+cnpm install axios
+
+# swiper的安装
+cnpm install vue-awesome-swiper --save
+
+# element 安装
+cnpm i element-ui -S
+
+# 配置完，启动项目
+cnpm run dev
+```
+## swiper的安装配置
+网站：https://github.com/surmon-china/vue-awesome-swiper
+
+## element的安装配置
+网站：https://element.eleme.cn/#/zh-CN/component/installation
+
+## awesome-vue的安装配置
+网站：https://github.com/vuejs/awesome-vue
+
+
+## 音乐数据接口来源于百度云音乐
+ 接口url ：http://tingapi.ting.baidu.com/v1/restserver/ting
+	
+ 歌曲菜单接口地址：
+ method=baidu.ting.billboard.billList&type=1&size=10&offset=0
+ 
+ 歌手歌曲接口地址：
+ method=baidu.ting.artist.getSongList&tinguid="+ 歌手id +"&limits= 条数 &use_cluster=1&order=2"
+ 
+ 搜索列表：
+ method=baidu.ting.search.catalogSug&query=
+ 
+ 歌手的信息：
+ method=baidu.ting.artist.getInfo&tinguid= 歌手id
+ 
+ 歌曲歌词详情接口
+method=baidu.ting.song.lry&songid="+this.songid 歌曲id
+
