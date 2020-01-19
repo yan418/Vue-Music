@@ -1,14 +1,12 @@
 ## 使用Vue 搭建的移动端案例
 [music] 一个移动端的手机播放器
 
-
-模仿百度音乐播放器
-所用到的组件：
-1.element-ui
-2.swiper轮播组件
-3.axios异步通信
-4.vue-data-loading加载数据，等待效果
-
+    模仿百度音乐播放器
+    所用到的组件：
+    1.element-ui
+    2.swiper轮播组件
+    3.axios异步通信
+    4.vue-data-loading加载数据，等待效果
 
 ## 搭建项目
 ``` bash
