@@ -1,8 +1,12 @@
 ## 使用Vue 搭建的移动端案例
 [music] 一个移动端的手机播放器
 
-
 模仿百度音乐播放器
+所用到的组件：
+1.element-ui
+2.swiper轮播组件
+3.axios异步通信
+4.vue-data-loading加载数据，等待效果
 
 ## 搭建项目
 ``` bash
@@ -38,6 +42,7 @@ cnpm i element-ui -S
 # 配置完，启动项目
 cnpm run dev
 ```
+
 ## swiper的安装配置
 网站：https://github.com/surmon-china/vue-awesome-swiper
 
@@ -47,8 +52,11 @@ cnpm run dev
 ## awesome-vue的安装配置
 网站：https://github.com/vuejs/awesome-vue
 
+## vue-data-loading的安装配置
+网站：https://github.com/bedlate/vue-data-loading/blob/master/README_CN.md
 
 ## 音乐数据接口来源于百度云音乐
+
  接口url ：http://tingapi.ting.baidu.com/v1/restserver/ting
 	
  歌曲菜单接口地址：
@@ -64,5 +72,5 @@ cnpm run dev
  method=baidu.ting.artist.getInfo&tinguid= 歌手id
  
  歌曲歌词详情接口
-method=baidu.ting.song.lry&songid="+this.songid 歌曲id
+ method=baidu.ting.song.lry&songid="+this.songid 歌曲id
 
